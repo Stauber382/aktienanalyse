@@ -1,7 +1,17 @@
 #
 #
 #
+
+devtools::load_all()
+
+usethis::use_package("bs4Dash", type = "Imports", min_version = TRUE )
 attachment::att_amend_desc()
+
+devtools::document() #Dokumentation erstellen
+
+usethis::use_pkgdown() #Webseite initial erstellen
+pkgdown::build_site() #Webseite aktualisieren
+
 golem::add_module(name = "name_of_module1", with_test = TRUE)
 golem::add_module(name = "name_of_module2", with_test = TRUE)
 golem::add_fct("helpers", with_test = TRUE)

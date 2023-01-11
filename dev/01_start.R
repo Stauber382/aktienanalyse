@@ -12,6 +12,7 @@ golem::fill_desc(
 )
 golem::set_golem_options()
 usethis::use_mit_license("Golem User")
+usethis::use_proprietary_license("Stefan Tauber")
 usethis::use_readme_rmd(open = FALSE)
 usethis::use_code_of_conduct(contact = "Golem User")
 usethis::use_lifecycle_badge("Experimental")
