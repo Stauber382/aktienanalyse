@@ -3,11 +3,11 @@
 #
 golem::fill_desc(
   pkg_name = "aktienanalyse",
-  pkg_title = "PKG_TITLE",
-  pkg_description = "PKG_DESC.",
-  author_first_name = "AUTHOR_FIRST",
-  author_last_name = "AUTHOR_LAST",
-  author_email = "AUTHOR@MAIL.COM",
+  pkg_title = "Aktienanalyse",
+  pkg_description = "Abfrage von Unternehmensdaten und div. Bewertungsanalysen.",
+  author_first_name = "Stefan",
+  author_last_name = "Tauber",
+  author_email = "mail.tauber@posteo.de",
   repo_url = NULL
 )
 golem::set_golem_options()

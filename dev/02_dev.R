@@ -3,8 +3,9 @@
 #
 
 devtools::load_all()
+run_app()
 
-usethis::use_package("bs4Dash", type = "Imports", min_version = TRUE )
+usethis::use_package("data.table", type = "Imports", min_version = TRUE )
 attachment::att_amend_desc()
 
 devtools::document() #Dokumentation erstellen
@@ -12,9 +13,14 @@ devtools::document() #Dokumentation erstellen
 usethis::use_pkgdown() #Webseite initial erstellen
 pkgdown::build_site() #Webseite aktualisieren
 
+
+
+stringi::stri_escape_unicode("Ä")
+
+
 golem::add_module(name = "name_of_module1", with_test = TRUE)
 golem::add_module(name = "name_of_module2", with_test = TRUE)
-golem::add_fct("helpers", with_test = TRUE)
+golem::add_fct("abfrage_kurse", with_test = TRUE)
 golem::add_utils("helpers", with_test = TRUE)
 golem::add_js_file("script")
 golem::add_js_handler("handlers")

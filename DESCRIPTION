@@ -1,17 +1,21 @@
 Package: aktienanalyse
-Title: An Amazing Shiny App
+Title: Aktienanalyse
 Version: 0.0.0.9000
-Authors@R: 
-    person("firstname", "lastname", , "your@email.com", role = c("aut", "cre"))
-Description: What the package does (one paragraph).
+Authors@R: person('Stefan', 'Tauber', email = 'mail.tauber@posteo.de', role = c('cre', 'aut'))
+Description: Abfrage von Unternehmensdaten und div. Bewertungsanalysen.
 License: file LICENSE
 URL: https://github.com/Stauber382/aktienanalyse
 BugReports: https://github.com/Stauber382/aktienanalyse/issues
 Imports: 
     bs4Dash (>= 2.2.1),
     config (>= 0.3.1),
+    data.table,
     golem (>= 0.3.5),
+    rvest,
     shiny (>= 1.7.4)
+Suggests: 
+    testthat (>= 3.0.0)
+Config/testthat/edition: 3
 Encoding: UTF-8
 LazyData: true
 RoxygenNote: 7.2.3
